@@ -1,0 +1,337 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 64px;
+    color: #000;
+}
+
+.subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: #4f4f4f;
+    margin-top: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.heading-container {
+    width: 55%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 0.3em;
+    margin-bottom: 1.5em;
+}
+
+.ellipse-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.ellipse-icon:first-of-type {
+    visibility: hidden;
+}
+
+.ellipse-icon {
+    margin-top: -18px;
+    padding: 0;
+    color: #C4C4C4;
+}
+
+.ingredients h2, .instructions h2 {
+    font-family: "Playfair Display", serif;
+    font-family: 700;
+    font-size: 1.5rem;
+    line-height: 32px;
+    color: #333;
+    margin: 1em 0;
+}
+
+.ingredient h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: #333;
+    margin: 2em 0;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.custom-checkbox-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-checkbox-list li {
+    margin: 0.625rem 0;
+}
+
+.custom-checkbox-list label {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox-list input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox-list .custom-checkbox {
+    display: inline-block;
+    min-width: 1.313rem;
+    height: 1.313rem;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    margin-right: 0.625rem;
+    position: relative;
+}
+
+.extra-custom {
+    width: 21px;
+    height: 21px;
+}
+
+.custom-checkbox-list .custom-checkbox::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: #F2994A;
+    transition: all 0.3s;
+}
+
+.custom-checkbox-list input[type="checkbox"]:checked+.custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredidents {
+    width: 50%;
+}
+
+.instructions {
+    width: 75%;
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 216px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    padding: 3em;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.sidebar h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.625rem;
+    line-height: 12px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sidebar-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 17px;
+    margin: 0;
+}
+
+.orange {
+    color: #F2994A;
+}
+
+.time-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: #333;
+}
+
+.time-icon {
+    color: #4F4F4F;
+}
+
+.sidebar-flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 2em auto;
+}
+
+.number {
+    background-color: #F2994A;
+    color: #fff;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 32px;
+    padding: 0.125rem 0.813rem 0.5rem 0.813rem;
+    display: inline-block;
+    align-self: flex-start;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19.5px;
+    color: #000;
+}
+
+.instructions-flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1em 0;
+}
+
+.instructions-flex-container p {
+    margin-top: 0;
+}
+
+.reference {
+    color: #BDBDBD;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 2em;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: .85rem;
+    color: #828282;
+    line-height: 17px;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .heading-container {
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .ingredient h3 {
+        margin: 1em 0;
+    }
+
+    .instructions {
+        width: 90%;
+    }
+
+    .sidebar {
+        box-shadow: none;
+        border-radius: 0;
+        padding: .5em;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 1em auto;
+        min-width: 100%;
+        gap: .5em;
+        flex-wrap: wrap;
+        order: -1;
+    }
+
+    .desktop-only {
+        display: none;
+        
+    }
+
+    .mobile-only {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        align-self: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .row-wrap {
+        align-self: flex-end;
+        width: 32%;
+    }
+
+    .sidebar-flex-container {
+        margin: .25em auto 0 auto;
+    }
+}
